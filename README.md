@@ -6,6 +6,22 @@ BankDispute Intelligence est un projet personnel à la croisée du développemen
 
 L'objectif est de faciliter l'investigation des transactions bancaires, l'analyse des refus de paiement et l'identification de comportements suspects, grâce à une plateforme qui intégrera progressivement des capacités d'analyse intelligente et d'assistance par IA.
 
+### Objectifs à court terme
+
+Faire évoluer progressivement BankDispute vers un **copilote IA d'investigation des alertes de fraude**, destiné aux analystes fraude et aux équipes monétiques.
+
+Les objectifs fonctionnels à terme sont :
+
+- Centraliser les transactions et les alertes.
+- Enrichir automatiquement les alertes avec les données disponibles.
+- Analyser les transactions et détecter les comportements suspects.
+- Développer un modèle ML de détection d'anomalies et de scoring de risque.
+- Intégrer un agent IA capable d'assister l'analyste dans son investigation.
+- Générer des synthèses argumentées et des recommandations.
+- Laisser à l'analyste la décision finale.
+
+**Objectif principal :** réduire le temps d'investigation et faciliter la qualification des alertes afin de limiter le travail manuel des analystes.
+
 ## Technologies
 
 ### Backend — En développement
@@ -27,6 +43,32 @@ L'objectif est de faciliter l'investigation des transactions bancaires, l'analys
 - Gestion des migrations avec Alembic.
 - Validation des données avec Pydantic.
 - Tests API avec Pytest et HTTPX.
+
+#### Qualité du code
+
+Le projet utilise **Ruff** et **Mypy** pour maintenir la qualité et la fiabilité du code Python.
+
+| Outil | Rôle |
+|---|---|
+| Ruff | Analyse statique, linting et détection des erreurs de style |
+| Mypy | Vérification statique des types (type checking) |
+
+#### Vérifications
+
+Depuis le dossier `backend` :
+
+```bash
+# Analyse du code
+uv run ruff check .
+
+# Formatage du code
+uv run ruff format .
+
+# Vérification des types
+uv run mypy .
+```
+
+Ces outils permettent de détecter les problèmes de qualité et de typage avant l'exécution et les tests.
 
 ### Frontend — Prochaine étape
 

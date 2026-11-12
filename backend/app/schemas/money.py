@@ -1,7 +1,6 @@
-from pydantic import Field
 from decimal import Decimal
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class MoneyRequest(BaseModel):

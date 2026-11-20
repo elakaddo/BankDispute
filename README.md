@@ -44,6 +44,8 @@ Les objectifs fonctionnels à terme sont :
 - Validation des données avec Pydantic.
 - Tests API avec Pytest et HTTPX.
 
+<img src="./demo/bankdisput_transactions.png" />
+
 #### Qualité du code
 
 Le projet utilise **Ruff** et **Mypy** pour maintenir la qualité et la fiabilité du code Python.
